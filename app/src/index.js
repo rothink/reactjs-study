@@ -4,5 +4,15 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import HelloWorld from './HelloWorld';
+import PropsValidation from './PropsValidation';
+
+// ReactDOM.render(<App />, document.getElementById('root'));
+// registerServiceWorker();
+
+ReactDOM.render(
+    // <HelloWorld txt = 'HelloWorld, eu sou o ReactJs!'/>,
+    <PropsValidation name="Rodrigo A." age='28' height="1.75" />,
+    document.getElementById("root")
+);
+
